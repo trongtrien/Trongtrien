@@ -1,0 +1,158 @@
+
+#banner{
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  height: 700px;
+  background-color: #000;
+}
+
+.banner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#banner h1{
+  padding-top: 120px;
+  font-family: SVN-Hand-Gothic-Bold;
+  letter-spacing: 5px;
+  font-size: 4.5rem;
+}
+#banner img{
+  margin: auto;
+  width: 250px;
+}
+#banner .link-box{
+  color: #fff;
+  text-decoration: none;
+  padding: 4px 80px 8px;
+  font-size: 2rem;
+  border: 2px solid darkorange;
+  background: transparent;
+  transition: 0.5s;
+}
+#banner .link-box:hover{
+  box-shadow: 0 0 10px #999;
+  background: darkorange;
+  border: 2px solid #999;
+}
+@media (max-width:960px) {
+#banner h1{
+  font-size: 3rem;
+}
+#banner img{
+  margin: auto;
+  width: 200px;
+}
+.link-box{
+  font-size: 1.6rem;
+}
+}
+
+
+
+.cb-slideshow,
+.cb-slideshow:after { 
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; 
+}
+.cb-slideshow:after { 
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.6),rgba(0,0,0,0.5)); 
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    -webkit-animation: imageAnimation 21s linear infinite 0s;
+    -moz-animation: imageAnimation 21s linear infinite 0s;
+    -o-animation: imageAnimation 21s linear infinite 0s;
+    -ms-animation: imageAnimation 21s linear infinite 0s;
+    animation: imageAnimation 21s linear infinite 0s; 
+}
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(../assets/img/banner1.jpg);
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(../assets/img/banner2.jpg);
+    -webkit-animation-delay: 7s;
+    -moz-animation-delay: 7s;
+    -o-animation-delay: 7s;
+    -ms-animation-delay: 7s;
+    animation-delay: 7s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(../assets/img/banner3.jpg);
+    -webkit-animation-delay: 14s;
+    -moz-animation-delay: 14s;
+    -o-animation-delay: 14s;
+    -ms-animation-delay: 14s;
+    animation-delay: 14s; 
+}
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation { 
+  0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    5% { opacity: 1;
+         animation-timing-function: ease-out; }
+    30% { opacity: 1 }
+    36% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+  0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    5% { opacity: 1;
+         animation-timing-function: ease-out; }
+    30% { opacity: 1 }
+    36% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+  0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    5% { opacity: 1;
+         animation-timing-function: ease-out; }
+    30% { opacity: 1 }
+    36% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation { 
+  0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    5% { opacity: 1;
+         animation-timing-function: ease-out; }
+    30% { opacity: 1 }
+    36% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes imageAnimation { 
+  0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    5% { opacity: 1;
+         animation-timing-function: ease-out; }
+    30% { opacity: 1 }
+    36% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}

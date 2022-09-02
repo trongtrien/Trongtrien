@@ -1,0 +1,71 @@
+.switch{
+    padding-right: 10px;
+  }
+  .switch label {
+      --gap: 2px;
+      --size: 22px;
+      --mediumSlateBlue: #517ca4;
+      --h:26px;
+      --w:60px;
+      height: var(--h);
+      width: var(--w);
+      padding: 0 var(--gap);
+      position: relative;
+      top: 4px;
+      cursor: pointer;
+      border-radius: calc(var(--h)/2);
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+  }
+      .icon {
+        height: var(--size);
+        width: var(--size);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .one {
+        color: lightyellow;
+      }
+      .two {
+        color: #000;
+      }
+  .switch  svg {
+        width: 75%;
+      }
+  .switch label::after {
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      transform: translateY(-50%);
+      box-shadow: 0px 0px 3px white;
+      top: 50%;
+      height: var(--size);
+      width: var(--size);
+      background-color: var(--mediumSlateBlue);
+      transition: 0.5s ease left;
+      z-index: -1;
+    }
+  
+  /* light mode */
+  .switchlight label {
+      box-shadow: 0px 0px 20px orange inset;
+  }
+  .switchlight label::after {
+      left: var(--gap);
+    }
+  /* dark mode */
+  .switchdark label {
+      box-shadow: 0px 5px 30px rgb(237, 182, 155) inset;
+  }
+  .switchdark label::after {
+      left: calc(100% - var(--size) - var(--gap));
+    }
+  .switchdark label .one svg {
+    color: #000 !important;
+  }
+  .switchdark label .two svg {
+    color: lightyellow !important;
+  }

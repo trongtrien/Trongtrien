@@ -1,0 +1,120 @@
+html[data-theme="light"]  {
+    --text-bw-color: #050505;
+    --text-dl-color: #333333;
+    --text-dl-l-color: #25312f;
+    --nav-dl-color: #517da4;
+    --bg-bw-color: rgb(250, 250, 250);
+    --bg-dl-color: rgb(248, 249, 250);
+    --bg-dl50-color: rgb(243, 243, 243);
+    --bg-img-dl-color: #f8f9fa;
+    --border-dl-color: rgb(146, 95, 0);
+    --bg-media-color: #ffffff;
+    --link-color: rgb(114, 62, 30);
+    --span-color: rgb(83, 76, 71);
+    --nav-bg-dl-color: rgb(248, 249, 250);
+  }
+  html[data-theme="dark"]  {
+    --text-bw-color: rgb(250, 250, 250);
+    --text-dl-color: rgb(218, 218, 218);
+    --text-dl-l-color: #0dcaf0;
+    --nav-dl-color: rgb(230, 230, 230);
+    --bg-dl-color: rgb(33, 37, 41);
+    --bg-dl50-color: rgb(196, 110, 75);
+    --bg-bw-color: rgb(5, 5, 5);
+    --bg-img-dl-color: #dac8c89d;
+    --border-dl-color: rgb(189, 170, 135);
+    --bg-media-color: #3c3e41;
+    --link-color: rgb(163, 123, 99);
+    --span-color: rgb(163, 161, 161);
+    --nav-bg-dl-color: rgb(33, 37, 41)
+  }
+  @import url(./banner.css);
+  @import url(./about.css);
+  @import url(./footer.css);
+  @import url(./Nomatch.css);
+  @import url(./download.css);
+  @import url(./share.css);
+  @import url(./auth.css);
+  @import url(./switch.css);
+  @import url(./postdetail.css);
+  @import url(./course.css);
+  @import url(./prac.css);
+  @import url(./exam.css);
+  @import url(./checkmatch.css);
+  @import url(./QuizSelect.css);
+  @import url(./fontawesome4/css/font-awesome.css);
+  @font-face {
+    font-family: SVN-Big-Noodle;
+    src: url(../assets/font/SVN-Big-Noodle-Titling.otf);
+  }
+  @font-face {
+    font-family: SVN-Hand-Gothic-Bold;
+    src: url(../assets/font/SVN-Hand-Gothic-Bold.otf);
+  }
+  @font-face {
+    font-family: gungsuhche;
+    src: url(../assets/font/gungsuhche.ttf);
+  }
+  @font-face {
+    font-family: batangche;
+    src: url(../assets/font/batangche.ttf);
+  }
+  .text-bw{
+    color: var(--text-bw-color) !important;
+  }
+  .text-dl{
+    color: var(--text-dl-color) !important;
+  }
+  .text-dl-l{
+    color: var(--text-dl-l-color) !important;
+  }
+  .text-dl p{
+    color: var(--text-dl-color) !important;
+  }
+  .text-main-b-dl {
+    color: var(--nav-dl-color) !important;
+  }
+  .text-logo-y{
+    color: #ff8c00 !important;
+  }
+  .text-logo-b{
+    color: #517ca4 !important;
+  }
+  .bg-logo-y{
+    background-color: #ff8c00 !important;
+  }
+  .bg-logo-b{
+    background-color: #517ca4 !important;
+  }
+  .bg-bw{
+    background-color: var(--bg-bw-color) !important;
+  }
+  .bg-dl-img{
+    background-color: rgb(250, 250, 250);
+  }
+  .bg-dl{
+    background-color: var(--bg-dl-color) !important;
+  }
+  .nav-bg-dl{
+    background-color: var(--nav-bg-dl-color) !important;
+  }
+  .fw300{
+    font-weight: 300;
+  }
+  .fw400{
+    font-weight: 400;
+  }
+  .fw500{
+    font-weight: 500;
+  }
+  .fw600{
+    font-weight: 600;
+  }
+  .fw700{
+    font-weight: 700;
+  }
+  a{color: #555;transition: 0.5s;text-decoration: none}
+a:hover{text-decoration: none;color:darkorange}
+.cleaner{
+  clear: both;
+}

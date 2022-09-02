@@ -1,0 +1,48 @@
+.download-row button{
+    font-size: 1.2rem;
+    padding: 12px;
+    background-color: #035195;
+    color: #ffffff;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.download-row .btn-primary{
+    border-radius: 10px !important;
+}
+.download-row img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    z-index: 10;
+}
+.download-row-img img{
+    width: 50px !important;
+    z-index: -100 !important;
+}
+.download-row button:hover{
+    color: #71bc2a;
+}
+.download-popup{
+    width: 35%;
+    min-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.download-popup + p{
+    color: #fff !important;
+}
+.download-modal{
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 120%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(35, 34, 34, 0.353);
+}
+.download-modal-show{
+    left: 0 !important;
+}

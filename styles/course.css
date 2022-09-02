@@ -1,0 +1,68 @@
+.player-control{
+    background-image: linear-gradient(45deg, var(--main-b), var(--main-y), var(--main-b));
+}
+.breadcrumbs{
+    padding: 0 20px;
+}
+.breadcrumbs__btn{
+    padding-top: 13px;
+}
+.breadcrumbs__btn button{
+    background: none !important;
+}
+.accordion-col{
+    position: fixed;
+    overflow-x: scroll;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    border: 1px;
+    z-index: 1;
+    background-color: #ffffff
+}
+.menu-btn button{
+    position: absolute;
+    top: -1px;
+    right: 0px !important;
+    z-index: 10;
+    background: transparent;
+}
+.video-col{
+    position: relative;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    border: 1px;
+}
+
+.hide_col{
+    right: -500px;
+    display: none;
+    transition: 0.5s;
+}
+.show_col{
+    right: 0;
+    display: block;
+    transition: 0.5s;
+}
+@media (max-width:1200px) {
+    .accordion-col{
+        max-width: 400px;
+    }
+    .video-col{
+        position: relative;
+        height: 100%;
+    }
+    .breadcrumbs{
+        padding: 0 10px;
+      }
+    
+}
+.accordion-collapse{
+    background: rgba(26, 26, 26, 0.6);
+    color: rgb(230, 226, 223);
+}
+.accordion-header button:focus{
+    box-shadow: none;
+    outline: none;
+  }

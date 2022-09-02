@@ -1,0 +1,25 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .card img {
+    max-height: 200px;
+  }
+  .content__post table{
+    border-collapse:collapse;
+      margin: 10px auto;
+  }
+  .content__post table th{
+   padding: 10px 5px;
+   text-align: center;
+   color: #000;
+   border: #000 1px solid;
+  }
+  .content__post table td{
+      padding: 10px 5px;
+      text-align: center;
+      border: #000 1px solid;
+      color: #000 !important;
+     }

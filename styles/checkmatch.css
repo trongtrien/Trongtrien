@@ -1,0 +1,168 @@
+/* color #2164a0 btn, --main-b btn:hover,  */
+.g-mobile{
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+}
+.g-pc{
+  position: relative;
+  width: 520px;
+  min-height: 100vh;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.g-pc-bg{
+  background-image: url('../assets/img/games/games-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.g-bg{
+  background-image: url('../assets/img/games/games-bg.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+}
+.g-h{
+  box-sizing: border-box;
+  padding: 2% 2% 0 2% ;
+}
+.g-h-nav{
+  background-color: rgba(229, 216, 200,0.5);
+  border-radius: 10px;
+  height: 45px;
+}
+.g-h-nav-pc{
+  height: 60px !important;
+}
+.g-h-nav-lesson{
+  position: relative;
+  margin-left: 3%;
+  width: 25%;
+  height: 70%;
+  top: 15%;
+  background-image: url('../assets/img/games/lesson-bg.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.g-h-nav-lesson > span{
+  right: -4% !important;
+}
+.g-h-nav-lesson-m{
+  width: 28% !important;
+}
+.g-h-nav-lesson-m > span{
+  right: -6% !important;
+}
+.g-h-nav-span{
+  position: absolute;
+  width: 40px;
+  right: 10%;
+  top: 15%;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+.g-h-nav-pc-span{
+  position: absolute;
+  width: 50px;
+  text-align: center;
+  right: 15%;
+  top: 18%;
+  color: #ffffff;
+}
+.g-h-nav-score{
+  position: relative;
+  margin-left: 3%;
+  width: 32%;
+  height: 70%;
+  top: 15%;
+  background-image: url('../assets/img/games/score-bg.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.g-h-nav-check{
+  position: relative;
+  margin-left: 3%;
+  width: 32%;
+  height: 70%;
+  top: 15%;
+  background-image: url('../assets/img/games/check-bg.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.g-h-nav img{
+  position: relative;
+  top: 15%;
+  height: 70%;
+}
+.g-body{
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2%;
+}
+.g-body-content{
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(229, 216, 200,0.5), rgba(1, 81, 92, 0.4));
+  border-radius: 10px;
+}
+.g-start{
+  position: relative;
+  display: flex;
+  left: 0;
+  top: -4rem;
+  flex-direction: column;
+  align-items: center;
+}
+.swal2-hide-custom{
+  display: none !important;
+}
+.g-start>img{
+  /* background-image: url('../assets/img/games/start-btn.png'); */
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+.btn-games {
+  color: var(--bs-light);
+  background-color: #2164a0;
+  border-color: #2164a0;
+  border-radius: 10px !important;
+  box-shadow: 0 0 5px #ffffff;
+}
+.btn-games:hover {
+  color: var(--bs-light);
+  background-color: var(--main-b);
+  border-color: var(--main-b);
+}
+.btn-check:focus + .btn-games,
+.btn-games:focus {
+  color: var(--bs-light);
+  background-color: var(--main-y);
+  border-color: var(--main-y);
+}
+.btn-check:active + .btn-games,
+.btn-check:checked + .btn-games,
+.btn-games.active,
+.btn-games:active,
+.show > .btn-games.dropdown-toggle {
+  color: var(--bs-light);
+  background-color: var(--main-y);
+  border-color: var(--main-y);
+}
+.btn-games.disabled,
+.btn-games:disabled {
+  color: var(--bs-light);
+  background-color: var(--main-b);
+  border-color: var(--main-b);
+}

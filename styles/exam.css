@@ -1,0 +1,292 @@
+.wrap-exam{
+  width: 100%;
+  min-width: 800px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.wrap-exam-body{
+  min-height: 500px;
+  max-width: 800px;
+  margin: auto;
+  background: url('../assets/img/bg-exam.png');
+  background-size: 100% 100%;
+}
+  .exam-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(9, 66, 112, 0.4);
+  }
+  .exam-modal-body{
+    position: relative;
+    align-items: center;
+    width: 80%;
+    min-width: 400px;
+  }
+  .score-sheet{
+    background-color: #5e4676;
+    width: 100%;
+    min-width: 500px;
+    min-height: 50vh;
+    box-sizing: border-box;
+  }
+  .table-lesson tr th,td{
+    color: rgb(54, 41, 26) !important;
+  }
+  .wrap-exam-top{
+    width: 100%;
+    height: 51px;
+    background: url('../assets/img/bg_top.jpg') repeat-x ;
+  }
+  .wrap-exam-body-video{
+    width: 80%;
+    margin: auto;
+  }
+  .wrap-exam-body-video iframe{
+    border-left: 1px #6c757d solid;
+    border-top: 1px #6c757d solid;
+  
+  
+  }
+  .wrap-exam-body-right{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #bbc9e1;
+  }
+  .wrap-exam-body-right > .row{
+    width: 100%;
+    max-width: 400px;
+  }
+  .wrap-exam-body-right tr{
+    font-size: 0.8rem;
+    line-height: 7px;
+  }
+  .wrap-exam-body-right tr td img{
+    width: 100%;
+  }
+  .container-exam {
+      position: relative;
+      width: 100%;
+      margin:0;
+      padding: 0;
+    }
+    .container-exam img{
+      width: 100%;
+    }
+  .container-exam-ads{
+    background-color: #094270;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 300px;
+    width: 55%;
+  }
+  .container-exam-resuilt{
+    box-sizing: border-box;
+    margin: auto;
+    width: 800px;
+    padding: 20px;
+  }
+  .container-exam-resuilt table tr th, td{
+    border: #ffffff 1px solid;
+    color: #fff !important;
+  }
+  .container-exam-resuilt table{
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden !important;
+    box-shadow: 0 0 0 1px rgb(255, 255, 255);
+  }
+  .container-exam-resuilt img{
+    width: 30%;
+    margin-top: 15%;
+  }
+  .container-exam ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .btn-exam{min-width: 30%;
+    margin-top: 5px;
+    background: url('../assets/img/blue-square-button.png');
+    background-size: 100% 100%;
+    color: #262323;
+    font-weight: 500;
+  }
+  .area_time{
+    position: relative;
+  }
+  .area_time h4{
+    padding: 0 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .btn-exam:hover{
+    color: #ffffff;
+    transition: 0.2s;
+    transform: scale(1.05);
+  }
+  .btn-exam-next{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 30% !important;
+    font-size: 1.2rem;
+  }
+    .small {
+      height: 400px !important;
+    }
+  
+  
+    .home{
+      text-align: center;
+    }
+  
+    .container-exam div span{
+      color: rgb(11, 88, 88);
+      margin: 30px;
+      font-weight: bold;
+    }
+  
+    .container-exam button{
+      margin-top: 10px;
+    }
+    .inputbtn{
+      display: block;
+      box-sizing: border-box;
+      left: 0;
+      position: relative;
+      cursor: pointer;
+      font-size: 24px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      z-index: 0;
+    }
+    .inputBtn{
+      cursor: pointer;
+    }
+    .inputbtn input{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    .inputbtn:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+    .inputbtn input:checked ~ .checkmark {
+      box-shadow: 1px 1px 5px #ccc;
+      border: #000 solid 1px;
+      background-color: #094270;
+    }
+    .inputbtn input:checked ~ .inputBtn {
+      color: rgb(255, 250, 250);
+    }
+    .scoresheet{
+      list-style: none;
+      text-align: center;
+      background-color: rgb(226, 228, 238);
+      padding-bottom: 20px;
+      margin-bottom: 8px;
+    }
+  
+    .options {
+        padding-top: 1%;
+        padding-left: 5px;
+        background-color: khaki;
+        width: 200px;
+        border: 1px;
+        border-radius: 5px;
+        height: 35px;
+        box-shadow: 5px 5px 5px #888888;
+        margin: 10px;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+  
+    .retakeButton{
+      margin-top: 10px;
+      margin:auto;
+      display: block;
+      width: 120px;
+      height:40px;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: rgb(228, 214, 28);
+      font-weight: bold;
+    }
+  
+    .checkmark{
+    position: absolute;
+    top: auto;
+    left: -10.5px;
+    bottom: 0px;
+    line-height: 35px;
+    height: 34px;
+    width: 35px;
+    background-color: #eee;
+    border-radius: 50%;
+    z-index: -1;
+    }
+  
+    .button{
+      margin-top: 5px;
+      display: block;
+      width: 120px;
+      height:40px;
+      border-radius: 5px;
+      font-size: 14px;
+      background-color: rgb(228, 214, 28);
+      font-weight: bold;
+    }
+  
+    .green {
+      background-color: green!important;
+      color: #FFF;
+    }
+  
+    .questionItem{
+      position: relative;
+      background-color: #ffe4b3;
+      box-sizing: border-box;
+      margin:auto;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      width:70%;
+    }
+    .questionItem li{
+      list-style-type: none;
+      font-weight: bold;
+      margin-right: 10px;
+      width:70%;
+    }
+  @media (max-width: 1400px) {
+    .area_time h4{
+      padding: 0 !important;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @media (max-width: 1200px) {
+    .area_time h4{
+      padding: 0 !important;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @media (max-width:800px) {
+    .container-exam-resuilt{
+      box-sizing: border-box;
+      margin: auto;
+      width: 500px;
+      padding: 20px;
+    }
+  }

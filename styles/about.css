@@ -1,0 +1,27 @@
+.about img:hover{
+    transition: 0.5s;
+  transform: scale(1.2);
+}
+.about img{
+    transition: 0.5s;
+}
+.epscard-after{
+  position: relative;
+  transition: 0.5s;
+}
+.epscard-after-btn{
+  background: transparent;
+  color: #fff !important;
+  opacity: 0;
+  font-size: 0;
+  transition: 0.5s;
+}
+.epscard-after:hover .epscard-after-btn{
+  text-align: center;
+  padding-top: 20%;
+  transition: 0.3s ;
+  opacity: 1;
+  font-size: 2rem;
+  text-shadow: 0px 0px 20px #000;
+  background-color: rgba(44, 26, 3, 0.6);
+}

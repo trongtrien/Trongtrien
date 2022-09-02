@@ -1,0 +1,75 @@
+.form-body{
+    position: relative;
+}
+.mark{
+    position: relative;
+    height: 34px;
+    top: -30px;
+    font-size: 1.4rem;
+    overflow:visible;
+    background-color: transparent;
+}
+.form-body .radio > label > input{
+    margin-left: 30px;
+    opacity: 0;
+    cursor: pointer;
+}
+.form-body .radio > label{
+    cursor: pointer;
+}
+.form-body .radio > label > .markCorect > .checkQuiz{
+    border-radius: 50%;
+    padding: 0 10px;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+    overflow:visible;
+    background-color: rgb(7, 66, 68);
+    color: rgb(255, 255, 255);
+}
+.form-body .radio > label > .markInCorect > .checkQuiz{
+    border-radius: 50%;
+    padding: 0 10px;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+    overflow:visible;
+    background-color: rgb(7, 66, 68);
+    color: rgb(255, 255, 255);
+}
+.form-body .radio > label > input:checked + .markCorect{
+    color: #5ceb1f;
+}
+.form-body .radio > label > input:checked + .markInCorect{
+    color: #eb6d1f;
+}
+.form-body .radio > label > input:checked + .markCorect .checkQuiz{
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #5ceb1f;
+    color: rgb(15, 84, 81);
+}
+.form-body .radio > label > input:checked + .markInCorect .checkQuiz{
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #eb6d1f;
+    color: rgb(15, 84, 81);
+}
+/*  */
+.form-body .radio > label > .corect{
+    color: #5ceb1f;
+}
+.form-body .radio > label > .inCorect{
+    color: #eb6d1f;
+}
+.form-body .radio > label > .corect .checkQuiz{
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #5ceb1f;
+    color: rgb(15, 84, 81);
+}
+.form-body .radio > label > .inCorect .checkQuiz{
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #eb6d1f;
+    color: rgb(15, 84, 81);
+}
+
+
+.form-body .radio > label{
+    padding-left: 20px;
+}

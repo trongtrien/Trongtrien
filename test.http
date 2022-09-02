@@ -1,0 +1,4 @@
+POST  http://68.183.189.245:3001/api/progress 
+
+Content-Type: application/json
+{"userId": "54654"}
